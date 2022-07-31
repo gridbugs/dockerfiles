@@ -5,14 +5,17 @@
 # docker run -it --volume $HOME:/home/$(whoami) base
 
 FROM ubuntu
+ENV DEBIAN_FRONTEND=noninteractive
 RUN yes | unminimize
 RUN apt-get update && apt-get upgrade && apt-get install -y \
     build-essential \
     man-db \
+    tzdata \
     sudo \
     git \
     tmux \
     neovim
+RUN ln -snf /usr/share/zoneinfo/Australia/Sydney /etc/localtime
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 ARG UID
 ARG USERNAME
