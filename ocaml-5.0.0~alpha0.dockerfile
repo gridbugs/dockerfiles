@@ -1,5 +1,5 @@
 # Typical use:
-# docker build -f ocaml-5.0.0~alpha0.dockerfile -t ocaml5 --build-arg BASE=ocaml
+# docker build -f ocaml-5.0.0~alpha0.dockerfile -t ocaml5 --build-arg BASE=ocaml .
 # docker run -it ocaml5
 
 ARG BASE
