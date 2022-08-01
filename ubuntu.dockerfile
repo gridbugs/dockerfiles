@@ -14,7 +14,8 @@ RUN apt-get update && apt-get upgrade && apt-get install -y \
     sudo \
     git \
     tmux \
-    neovim
+    neovim \
+    htop
 RUN ln -snf /usr/share/zoneinfo/Australia/Sydney /etc/localtime
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 ARG UID
