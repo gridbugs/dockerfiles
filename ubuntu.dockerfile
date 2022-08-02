@@ -9,12 +9,15 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN yes | unminimize
 RUN apt-get update && apt-get upgrade && apt-get install -y \
     build-essential \
+    pkg-config \
+    nodejs \
     man-db \
     tzdata \
     sudo \
     git \
     tmux \
     neovim \
+    ripgrep \
     htop
 RUN ln -snf /usr/share/zoneinfo/Australia/Sydney /etc/localtime
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers

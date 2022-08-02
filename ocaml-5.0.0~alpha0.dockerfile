@@ -5,4 +5,6 @@
 ARG BASE
 FROM $BASE
 RUN opam switch create 5.0.0~alpha0
-RUN opam install -y utop
+
+# Handy tools and libraries
+RUN opam install -y base utop ocaml-lsp-server ocamlformat
