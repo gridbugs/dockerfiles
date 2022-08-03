@@ -12,6 +12,7 @@ RUN yes | unminimize
 RUN apt-get update && apt-get upgrade && apt-get install -y \
     build-essential \
     pkg-config \
+    strace \
     nodejs \
     man-db \
     tzdata \
