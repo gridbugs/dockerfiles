@@ -7,6 +7,8 @@
 FROM ubuntu
 ENV DEBIAN_FRONTEND=noninteractive
 RUN yes | unminimize
+
+# Install handy tools
 RUN apt-get update && apt-get upgrade && apt-get install -y \
     build-essential \
     pkg-config \
@@ -19,6 +21,14 @@ RUN apt-get update && apt-get upgrade && apt-get install -y \
     neovim \
     ripgrep \
     htop
+
+# Install common dev libraries
+RUN apt-get update && apt-get upgrade && apt-get install -y \
+    libx11-dev \
+    mesa-common-dev \
+    libegl1-mesa-dev \
+    libgles2-mesa-dev
+
 RUN ln -snf /usr/share/zoneinfo/Australia/Sydney /etc/localtime
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 ARG UID
