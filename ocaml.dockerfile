@@ -14,6 +14,8 @@ RUN sudo mkdir /opam && sudo chmod a+rwx /opam
 ENV OPAMROOT=/opam
 RUN opam init --disable-sandboxing --auto-setup
 
+RUN opam switch create 4.14.1+trunk
+
 # Handy tools and libraries
 RUN opam install -y base core utop ocaml-lsp-server ocamlformat
 
