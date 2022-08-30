@@ -17,7 +17,7 @@ RUN opam init --disable-sandboxing --auto-setup
 RUN opam switch create 4.14.1+trunk
 
 # Handy tools and libraries
-RUN opam install -y base core utop ocaml-lsp-server ocamlformat
+RUN opam install -y base core utop ocaml-lsp-server ocamlformat sexp
 
 # Deps for working on dune
 RUN opam install -y core_bench ctypes cinaps mdx coq js_of_ocaml
