@@ -1,0 +1,1 @@
+docker build . --tag gridbugs-dev-ubuntu-sel4
