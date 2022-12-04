@@ -35,4 +35,3 @@ RUN apt-get update && \
   ;
 
 USER $USERNAME
-
