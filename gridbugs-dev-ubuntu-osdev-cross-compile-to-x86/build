@@ -1,0 +1,1 @@
+docker build . --tag gridbugs-dev-ubuntu-osdev-cross-compile-to-x86

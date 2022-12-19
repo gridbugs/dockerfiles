@@ -36,6 +36,7 @@ RUN apt-get update && apt-get install -y \
   gdb \
   zip \
   wget \
+  file \
   ;
 
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash && \
