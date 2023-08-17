@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y \
   zip \
   wget \
   file \
+  direnv \
   ;
 
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash && \
