@@ -1,0 +1,9 @@
+[user]
+	email = stephen@sherra.tt
+	name = Stephen Sherratt
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = /home/s/.gitignore
+[color]
+	ui = auto
