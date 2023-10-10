@@ -72,3 +72,5 @@ RUN rm -f .bashrc .profile && \
   git clone --depth=1 https://github.com/gridbugs/dotfiles .dotfiles && \
   .dotfiles/install.sh
 RUN nvim -u .vim/plugins.vim -c PlugInstall -c qa
+
+COPY gitconfig $HOME/.gitconfig
