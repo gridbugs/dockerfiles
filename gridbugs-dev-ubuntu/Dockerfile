@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y \
   git \
   rsync \
   mercurial \
-  darcs \
   tmux \
   neovim \
   ripgrep \
