@@ -39,7 +39,7 @@ RUN apt-get update && apt-get install -y \
   direnv \
   ;
 
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash && \
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash && \
   apt-get install -y nodejs
 
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
