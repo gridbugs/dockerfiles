@@ -1,0 +1,1 @@
+docker build . --tag gridbugs-ubuntu --build-arg UID=$(id -u) --build-arg USERNAME=$(whoami)
